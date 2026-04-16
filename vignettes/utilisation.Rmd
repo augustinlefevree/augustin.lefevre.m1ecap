@@ -1,0 +1,26 @@
+---
+title: "utilisation"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{utilisation}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(augustin.lefevre.m1ecap)
+head(df_football)
+
+filtrer_resultat(df_football, "H")
+
+calcul_buts_moyens(df_football)
+
+plot_buts_moyens(df_football)
+```
