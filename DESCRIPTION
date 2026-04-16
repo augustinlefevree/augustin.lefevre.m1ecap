@@ -1,19 +1,21 @@
 Package: augustin.lefevre.m1ecap
-Title: Analyse match football
+Title: Analyse de matchs de football
 Version: 0.0.0.9000
 Authors@R: 
-    person("Augustin", "Lefevre", , "augustinroy91@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: MIT
+    person("Augustin", "Lefevre", email = "augustinroy91@gmail.com", role = c("aut", "cre"))
+Description: Ce package permet d'analyser des matchs de football à partir d'un jeu de données contenant les résultats, statistiques et cotes de paris.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Depends: 
     R (>= 3.5)
-LazyData: true
-Suggests: 
+Imports:
+    ggplot2
+Suggests:
+    testthat,
     knitr,
-    rmarkdown,
-    testthat (>= 3.0.0)
-Config/testthat/edition: 3
+    rmarkdown
 VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
